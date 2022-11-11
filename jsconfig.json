@@ -24,8 +24,11 @@
         "hooks/*"
       ],
       "@styles/*": [
-        "styles/*"
+        "assets/styles/*"
+      ],
+      "@theme/*": [
+        "theme/*"
       ]
-    }
+    },
   }
 }

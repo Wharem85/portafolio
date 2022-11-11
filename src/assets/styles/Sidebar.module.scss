@@ -1,0 +1,149 @@
+@import "vars";
+
+.Menu {
+	width: 9rem;
+	background-color: $--background-grey-black;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	display: flex;
+	z-index: 3;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	list-style-type: disc;
+}
+
+.main-menu_top {
+	background: $--black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin-bottom: 150px;
+}
+
+.logo {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-letter {
+	width: 7rem;
+	height: auto;
+	padding-bottom: 5px;
+}
+
+.logo span {
+	font-family: sans-serif;
+	color: $--white;
+	margin-top: 1px;
+	font-size: 2rem;
+}
+
+.main-menu_top>span {
+	font-family: 'Open Sans';
+	color: $--text-color;
+	font-size: 1rem;
+	margin-top: 0.3rem;
+	padding-bottom: 20px;
+}
+
+.main-menu_nav {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  border-top: 1px solid $--border;
+	margin-bottom: 100px;
+}
+
+.main-menu_nav .pages {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 1.1rem;
+	color: -text-color;
+	line-height: 5rem;
+	border-bottom: 1px solid $--border;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.pages {
+	color: $--text-color;
+}
+
+.pages:hover {
+	color: $--text-hover;
+}
+
+.page-contact {
+	color: $--text-hover;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 1.1rem;
+	color: -text-color;
+	line-height: 5rem;
+	border-bottom: 1px solid $--border;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.social {
+	color: $--text-color;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	height: 20rem;
+}
+
+.li {
+	display: list-item;
+	list-style: none;
+	padding-right: 8px;
+}
+
+.social svg {
+	width: 1.5rem;
+}
+
+.social svg:hover {
+	-webkit-text-size-adjust: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Open Sans",sans-serif;
+  -webkit-box-direction: normal;
+  list-style: none;
+  text-align: center;
+  color: #08fdd8;
+  box-sizing: border-box;
+  will-change: transform;
+  overflow: hidden;
+  width: 1.5rem;
+}
+
+.social-icon {
+	width: 1.5rem;
+}
+
+.social-icon:hover {
+	color: $--text-hover;
+}
+
