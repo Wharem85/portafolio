@@ -20,6 +20,9 @@
       "@context/*": [
         "context/*"
       ],
+      "@utils/*": [
+        "utils/*"
+      ],
       "@hooks/*": [
         "hooks/*"
       ],

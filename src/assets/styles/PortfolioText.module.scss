@@ -1,0 +1,57 @@
+@import "vars";
+
+.PortfolioText {
+	margin-top: 200px;
+	margin-left: 70px;
+}
+
+.potTitle {
+	font-family: $--font-family;
+	color: $--text-hover;
+}
+
+.potTitle::before {
+	content: '<h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -1.5rem;
+}
+
+.potTitle::after {
+	content: '</h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 3.8rem;
+	margin-left: 2rem;
+}
+
+.portSubtitle {
+	color: $--white;
+	font-family: "Open Sans",sans-serif;
+	font-size: $--lg;
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 120px;
+}
+
+.portSubtitle::before {
+	content: '<p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+}
+
+.portSubtitle::after {
+	content: '</p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 2rem;
+}

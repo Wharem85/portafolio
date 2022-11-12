@@ -1,6 +1,11 @@
 	@font-face {
 	font-family: 'La Belle Aurore';
-	src: url(../LaBelleAurore-Regular.ttf);
+	src: url(../font/LaBelleAurore-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Passion One';
+	src: url(../font/PassionOne-Regular.ttf);
 }
 
 	$--white: #FFFFFF;
@@ -12,7 +17,7 @@
 	$--text-hover: #08fdd8;
 	$--text-etiqueta: #515152;
 	$--font-etiqueta: 'La Belle Aurore';
-	$--font-family: 'font-file-82132';
+	$--font-family: 'Passion One';
 	$--border: #282828;
 	$--sm: 16px;
 	$--md: 18px;

@@ -1,0 +1,36 @@
+@import "vars";
+
+.PortfolioImage {
+	margin: 50px 0 100px 0;
+}
+
+.PortfolioImage::before {
+	content: '<section>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -1.5rem;
+}
+
+.PortfolioImage::after {
+	content: '</section>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 3.8rem;
+	margin-left: 2rem;
+}
+
+.list::-webkit-scrollbar {
+ display: none;
+}
+
+.list:hover::-webkit-scrollbar {
+ display: initial;
+}
+
+.list::-webkit-scrollbar-thumb {
+	background-color: $--text-hover;
+}

@@ -6,8 +6,8 @@
 }
 
 .h1 {
-	font-family: $--font-family;
 	color: $--white;
+	letter-spacing: 4px;
 }
 
 .h1::before {
@@ -38,7 +38,8 @@
 	color: #fd2155;
 	position: absolute;
 	top: 262px;
-	left: 375px;
+	left: 397px;
+	font-weight: bold;
 }
 
 .h1-grey {
@@ -85,10 +86,16 @@
 	text-align: center;
 	border-color: $--text-hover;
 	cursor: pointer;
+	background-image: -webkit-linear-gradient(45deg, $--text-hover 50%, transparent 50%);
+  background-image: linear-gradient(45deg, $--text-hover 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out;
 }
 
 .button:hover {
+	background-position: 0;
 	background-color: $--text-hover;
 	color: $--background-grey;
-	
 }
