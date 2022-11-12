@@ -3,25 +3,41 @@ import logo from '@icons/logo.png';
 import instagram from '@icons/instagram.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import {ModeNight} from "@mui/icons-material";
+import {
+  Box,
+	List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  Switch,
+} from "@mui/material";
 import styles from '@styles/Sidebar.module.scss';
 
-const Sidebar = () => {
-
+const Sidebar = ({setMode, mode}) => {
 	return (
-		<menu className={styles.Menu}>
-			<div className={styles['main-menu_top']}>
+		<Box className={styles.Menu} flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+			<Box className={styles['main-menu_top']}>
 				<Link className={styles.logo} href="/" rel="home">
 					<Image className={styles['logo-letter']} src={logo} alt="logo" width="50%" height="50%" layout="intrinsic" />
 					<span>Wilmer</span>
 				</Link>
 				<span>Web Developer</span>
-			</div>
-			<nav className={styles['main-menu_nav']}>
-				<Link className={styles.pages} rel="about" href="/about">About</Link>
-				<Link className={styles.pages} rel="skills" href="/skills">My Skills</Link>
-				<Link className={styles.pages} rel="work" href="/work">Work</Link>
-				<Link className={styles.pages, styles['page-contact']} rel="contact" href="/contact">Contact</Link>
-			</nav>
+			</Box>
+			<List className={styles['main-menu_nav']}>
+				<ListItem disablePadding>
+					<Link className={styles.pages} rel="about" href="/about">About</Link>
+				</ListItem>
+				<ListItem disablePadding>
+					<Link className={styles.pages} rel="skills" href="/skills">My Skills</Link>
+				</ListItem>
+				<ListItem disablePadding>
+					<Link className={styles.pages} rel="work" href="/work">Work</Link>
+				</ListItem>
+				<ListItem disablePadding>
+					<Link className={styles.pages, styles['page-contact']} rel="contact" href="/contact">Contact</Link>
+				</ListItem>
+			</List>
 			<ul className={styles.social}>
 				<li className={styles.li}>
 					<a href="https://linkedin.com/in/wmonterrozo" target="_blank">
@@ -39,7 +55,17 @@ const Sidebar = () => {
 					</a>
 				</li>
 			</ul>
-    </menu>
+			<Box flex={1} p={2}>
+				<ListItem disablePadding>
+          <ListItemButton component="a" href="#simple-list">
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
+            </ListItemButton>
+        </ListItem>
+			</Box>
+    </Box>
 	);
 };
 

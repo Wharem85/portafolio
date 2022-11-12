@@ -1,0 +1,94 @@
+@import "vars";
+
+.Present {
+	margin-top: 150px;
+	margin-left: 70px;
+}
+
+.h1 {
+	font-family: $--font-family;
+	color: $--white;
+}
+
+.h1::before {
+	content: '<h1>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -1.5rem;
+}
+
+.h1::after {
+	content: '</h1>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 3.8rem;
+	margin-left: 2rem;
+}
+
+.letter {
+	color: $--text-hover;
+	font-weight: bold;
+}
+
+.letter2 {
+	color: #fd2155;
+	position: absolute;
+	top: 262px;
+	left: 375px;
+}
+
+.h1-grey {
+	color: $--text-color;
+	font-family: "Open Sans",sans-serif;
+	font-size: $--lg;
+	font-weight: bold;
+	margin-top: 70px;
+}
+
+.h1-grey::before {
+	content: '<p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+}
+
+.h1-grey::after {
+	content: '</p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 2rem;
+}
+
+.content-button {
+	width: 300px;
+	height: 100px;
+}
+
+.button {
+	width: 80%;
+	height: 65%;
+	font-size: $--lg;
+	letter-spacing: 4px;
+	color: $--text-hover;
+	background-color: $--background-grey;
+	outline:none;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	border-color: $--text-hover;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: $--text-hover;
+	color: $--background-grey;
+	
+}
