@@ -1,0 +1,71 @@
+@import "vars";
+
+.Contact {
+	margin: 200px 0 100px 70px;
+}
+
+.contact {
+	font-family: $--font-family;
+	color: $--text-hover;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.contact::before {
+	content: '<h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -1.5rem;
+}
+
+.contact::after {
+	content: '</h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+
+.text {
+	color: $--white;
+	font-family: "Open Sans",sans-serif;
+	font-size: $--lg;
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 120px;
+}
+
+.text::before {
+	content: '<p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+}
+
+.text::after {
+	content: '</p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 2rem;
+}
+
+.form {
+	width: 700px;
+}
+
+.grid {
+
+}
+
+.inputs {
+	background-color: $--background-grey-input;
+	color: $--white;
+}

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Sidebar from '@components/Sidebar';
 import Presentation from '@components/Presentation';
+import Myself from '@components/Myself';
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     <ThemeProvider theme={darkTheme}>
       <Sidebar setMode={setMode} mode={mode} />
       <Presentation />
+      <Myself />
     </ThemeProvider>
   )
 }

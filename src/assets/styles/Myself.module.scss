@@ -1,0 +1,61 @@
+@import "vars";
+
+.Myself {
+	margin-left: 70px;
+	margin-top: 170px;
+	margin-bottom: 100px;
+}
+
+.about {
+	color: $--text-hover;
+	font-family: $--font-family;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.about::before {
+	content: '<h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -2rem;
+	margin-left: -2rem;
+}
+
+.about::after {
+	content: '</h2>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+
+.text {
+	color: $--white;
+	font-family: "Open Sans",sans-serif;
+	font-size: $--lg;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.text::before {
+	content: '<p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+	margin-left: -2rem;
+}
+
+.text::after {
+	content: '</p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 2rem;
+}

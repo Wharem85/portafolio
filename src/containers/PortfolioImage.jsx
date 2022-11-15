@@ -26,12 +26,12 @@ const PortfolioImage = () => {
 								<IconButton
 									sx={{color: 'rgba(255, 255, 255, 0.54)'}}
 									aria-label={`info about ${data.title}`}
+									href={`${data.direction}`}
 								>
 									<InfoIcon />
 								</IconButton>
 							}
 						>
-
 						</ImageListItemBar>
 					</ImageListItem>
 				))}
