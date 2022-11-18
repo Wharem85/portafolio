@@ -1,23 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Sidebar from '@components/Sidebar';
 import Presentation from '@components/Presentation';
 import Myself from '@components/Myself';
-import { createTheme, ThemeProvider } from "@mui/material";
+import styles from '@styles/Home.module.scss';
+import { createTheme, ThemeProvider, Box } from "@mui/material";
 
 const Home = () => {
-  const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
     palette: {
-      mode: mode,
+      mode: 'dark',
     },
   });
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Sidebar setMode={setMode} mode={mode} />
-      <Presentation />
-      <Myself />
+      <Sidebar />
+      <Box className={styles.Home}>
+        <Box className={styles.home}>
+          <Presentation />
+          <Myself />
+        </Box>
+      </Box>
     </ThemeProvider>
   )
 }

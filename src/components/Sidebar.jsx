@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import styles from '@styles/Sidebar.module.scss';
 
-const Sidebar = ({setMode, mode}) => {
+const Sidebar = () => {
 	return (
 		<Box className={styles.Menu} flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
 			<Box className={styles['main-menu_top']}>
@@ -61,7 +61,7 @@ const Sidebar = ({setMode, mode}) => {
             <ListItemIcon>
               <ModeNight />
             </ListItemIcon>
-            <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
+            <Switch />
             </ListItemButton>
         </ListItem>
 			</Box>

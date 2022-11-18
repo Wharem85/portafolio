@@ -1,7 +1,8 @@
 @import "vars";
 
 .Contact {
-	margin: 200px 0 100px 70px;
+	margin: 350px 0 150px 70px;
+	display: flex;
 }
 
 .contact {
@@ -57,15 +58,78 @@
 	margin-left: 2rem;
 }
 
+.form-container {
+	margin-top: 10px;
+}
+
+.form-container::before {
+	content: '<form>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+}
+
+.form-container::after {
+	content: '</form>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 0;
+}
+
 .form {
 	width: 700px;
 }
 
-.grid {
-
+.grid:nth-child(4) {
+	padding: 0;
 }
 
 .inputs {
 	background-color: $--background-grey-input;
 	color: $--white;
+	margin-top: 20px;
+}
+
+.message {
+	background-color: $--background-grey-input;
+	color: $--white;
+	margin-top: 20px;
+}
+
+.content-button-contact {
+	width: 300px;
+	height: 100px;
+	margin: 50px 0 0 20px;
+}
+
+.button-contact {
+	width: 80%;
+	height: 65%;
+	font-size: $--lg;
+	letter-spacing: 4px;
+	color: $--text-hover;
+	background-color: $--background-grey;
+	outline:none;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	border-color: $--text-hover;
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(45deg, $--text-hover 50%, transparent 50%);
+  background-image: linear-gradient(45deg, $--text-hover 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out;
+}
+
+.button-contact:hover {
+	background-position: 0;
+	background-color: $--text-hover;
+	color: $--background-grey;
 }

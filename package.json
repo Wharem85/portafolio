@@ -10,13 +10,16 @@
     "test": "test"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.9.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.13",
     "@mui/styled-engine-sc": "^5.10.6",
     "@next/font": "^13.0.3",
+    "dotenv": "^16.0.3",
     "formik": "^2.2.9",
+    "google-map-react": "^2.2.0",
     "next": "13.0.1",
     "next-images": "^1.8.4",
     "react": "18.2.0",

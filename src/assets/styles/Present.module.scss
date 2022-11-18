@@ -13,6 +13,7 @@
 .h1::before {
 	content: '<h1>';
 	font-family: $--font-etiqueta;
+	font-weight: bold;
 	color: $--text-etiqueta;
 	font-size: 1.8rem;
 	position: absolute;
@@ -23,6 +24,7 @@
 	content: '</h1>';
 	font-family: $--font-etiqueta;
 	color: $--text-etiqueta;
+	font-weight: bold;
 	font-size: 1.8rem;
 	position: absolute;
 	margin-top: 3.8rem;
