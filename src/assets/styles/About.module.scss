@@ -1,0 +1,174 @@
+@import "vars";
+
+.Aboutme {
+    color: $--text-hover;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.Aboutme::before {
+  content: '<html>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	left: 170px;
+	top: 0;
+}
+
+.Aboutme::after {
+  content: '</html>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 92%;
+	left: 170px;
+}
+
+.aboutme::before {
+  content: '<body>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	left: 190px;
+	top: 40px;
+}
+
+.aboutme::after {
+  content: '</body>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 87%;
+	left: 190px;
+}
+
+.content {
+  margin-left: 150px;
+}
+
+.about-text {
+  margin-left: 60px;
+  padding-top: 40px;
+}
+
+.about-text::before {
+  content: '<p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -3rem;
+}
+
+.about-text::after {
+  content: '</p>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 0;
+}
+
+.text {
+  font-family: $--font-family;
+	color: $--white;
+}
+
+.About {
+	font-family: $--font-family;
+}
+
+.About::before {
+  content: '<h1>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -190px;
+}
+
+.About::after {
+  content: '</h1>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	margin-top: -4.5rem;
+	margin-left: 50px;
+}
+
+.header{
+	width: 100%;
+	transform: translateY(-50%);
+    margin-top: 400px;
+	.span{
+		font-size: 5rem;
+		color: $--text-hover;
+        font-family: $--font-family;
+        letter-spacing: 4px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+}
+
+.glitch {
+	position: absolute;
+	top: -170px;
+	left: 50px;
+	width: 80%;
+	color: $--text-hover;
+}
+
+.glitch-window{
+	position: absolute;
+	top: -170px;
+	left: 48px;
+	width: 80%;
+	color: $--text-hover;
+	z-index: 99;
+	text-shadow: 2px 0 $--background-grey, -1px 0 rgb(132, 0, 255), -2px 0 green;
+	overflow: hidden;
+	animation: crt-me 2800ms infinite linear alternate-reverse;
+}
+
+@keyframes crt-me {
+	 0% {
+        clip: rect(31px, 9999px, 94px, 0)
+    }
+    10% {
+        clip: rect(112px, 9999px, 76px, 0)
+    }
+    20% {
+        clip: rect(85px, 9999px, 77px, 0)
+    }
+    30% {
+        clip: rect(27px, 9999px, 97px, 0)
+    }
+    40% {
+        clip: rect(64px, 9999px, 98px, 0)
+    }
+    50% {
+        clip: rect(61px, 9999px, 85px, 0)
+    }
+    60% {
+        clip: rect(99px, 9999px, 114px, 0)
+    }
+    70% {
+        clip: rect(34px, 9999px, 115px, 0)
+    }
+    80% {
+        clip: rect(98px, 9999px, 129px, 0)
+    }
+    90% {
+        clip: rect(43px, 9999px, 96px, 0)
+    }
+    100% {
+        clip: rect(82px, 9999px, 64px, 0)
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { Helmet } from 'react-helmet';
 import styles from '@styles/Present.module.scss';
 
 const Present = () => {
