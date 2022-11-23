@@ -1,0 +1,90 @@
+@import "vars";
+
+.List {
+	width: 50%;
+	margin: 150px auto 0;
+}
+
+.list-content {
+	font-size: 1.25em;
+	padding: 0;
+}
+
+.content {
+	margin-right: 150px;
+}
+
+.item {
+	list-style: none;
+	display: block;
+	height: 2.63em;
+	background-color: silver;
+	margin-bottom: 1em;
+	padding-left: 3em;
+	line-height: 2.6em;
+	white-space: nowrap;
+	border-radius: 1.3em 0 0 1.3em;
+	position: relative;
+	box-shadow: 1px 1px rgba(255, 255, 255, 0.15);
+	animation: moveout;
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+}
+
+.item::before {
+	content: '+';
+	display: block;
+	color: #fff;
+	text-align: center;
+	background-color: #131313;
+	border-radius: 50%;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	position: absolute;
+	left: 0.3em;
+	top: 0.3em;
+}
+
+.item::after {
+	content: '';
+	background-color: #fff;
+	display: block;
+	height: 2.6em;
+	width: 0;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	transform: skewY(30deg);
+	transform-origin: 0 0;
+	transition: 0.5s ease-out all;
+	box-shadow: 1px 1px rgba(255, 255, 255, 0.15);
+	animation: diagon infinite;
+	animation-duration: 2.5s;
+	animation-delay: 2s;
+}
+
+.list-content .text {
+	text-transform: uppercase;
+	color: #a20000;
+	text-decoration: none;
+}
+
+@keyframes moveout {
+	0% {
+		width: 2.6em;
+		overflow: hidden
+	}
+	100% {
+		width: 100%
+	}
+}
+
+@keyframes diagon {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 38%;
+	}
+}
