@@ -10,7 +10,7 @@
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
-	animation: 5s forwards ease-in cartMove;
+	animation: 3.5s forwards ease-in cartMove;
 }
 
 .animated-mail {
@@ -121,23 +121,7 @@
   }
 }
 
-.shadow {
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  width: 400px;
-  height: 30px;
-  transition: .4s;
-  transform: translateX(-50%);
-  -webkit-transition: .4s;
-  -webkit-transform: translateX(-50%);
-  -moz-transition: .4s;
-  -moz-transform: translateX(-50%);
-  border-radius: 100%;
-  background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
-}
-
-  .letter-image:focus{
+  .letter-image{
     .animated-mail {
       transform: translateY(50px);
       -webkit-transform: translateY(50px);
@@ -152,11 +136,11 @@
       -moz-transition: transform .4s, z-index .2s;
       -moz-transform: rotateX(0deg);
       z-index: 0;
-			animation: 3s alternate ease-in cart;
+			animation: 3.5s alternate ease-out cart;
     }
 
     .animated-mail .letter {
-      height: 180px;
+      animation: 2.5s forwards ease-out moves;
     }
 
     .shadow {
@@ -164,16 +148,28 @@
     }
   }
 
+@keyframes moves {
+  0%{
+    height: 180px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
 @keyframes cartMove {
   0% {
     -webkit-transform: translate(0, 0);
   	-moz-transform: translate(0, 0);
   	transform: translate(0, 0);
   }
-  100% {
+  50%{
     -webkit-transform: translate(-50%, -50%);
   	-moz-transform: translate(-50%, -50%);
   	transform: translate(-50%, -50%);
+  }
+  100% {
+  	transform: translateX(2000px);
   }
 }
 
@@ -187,11 +183,11 @@
       -moz-transform: rotateX(180deg);
 	}
 	100% {
-		transition: transform .4s;
+		transition: transform .3s;
       transform: rotateX(0deg);
-      -webkit-transition: transform .4s;
+      -webkit-transition: transform .3s;
       -webkit-transform: rotateX(0deg);
-      -moz-transition: transform .4s;
+      -moz-transition: transform .3s;
       -moz-transform: rotateX(0deg);
 	}
 }

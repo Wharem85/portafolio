@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import AnimatedTag from '@containers/AnimatedTag';
 import styles from '@styles/About.module.scss';
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
 					<span>ambitious projects with positive and respectful people.</span><br />
 				</Typography>
 			</Box>
+			<AnimatedTag />
 		</Box>
 	);
 };

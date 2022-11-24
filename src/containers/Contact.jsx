@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import Cart from './Cart';
 import { styled } from '@mui/material/styles';
 import {Box, Typography, TextField, Grid} from '@mui/material';
+import {Formik} from 'formik';
 import emailjs from '@emailjs/browser';
 import styles from '@styles/Contact.module.scss';
 
@@ -32,16 +33,6 @@ const Contact = () => {
 
 	const form = useRef();
 
-	const sendEmail = (e) => {
-		handleOpen();
-		setTimeout(() => {
-			handleClose();
-		}, 20000);
-		e.preventDefault();
-
-		// emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_PUBLICKEY)
-	}
-
 	return (
 		<Box className={styles.Contact}>
 			<Box>
@@ -55,52 +46,107 @@ const Contact = () => {
 				</Typography>
 			</Box>
 			<Box className={styles['form-container']} ml={{xs: 4, sm: 8, md: 12}}>
-				<form className={styles.form} ref={form} onSubmit={sendEmail}>
-					<Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
-						<Grid item xs={8} sm={6} className={styles.grid}>
-							<Inputs
-								name="name"
-								className={styles.inputs}
-								placeholder="Name"
-								fullWidth
-								color="primary"
-								variant="outlined" />
-						</Grid>
-						<Grid item xs={8} sm={6}>
-							<Inputs
-								name="email"
-								className={styles.inputs}
-								placeholder="Email"
-								fullWidth
-								type="email"
-								variant="outlined" />
-						</Grid>
-						<Grid item xs={8} sm={12} className={styles['grid-subject']}>
-							<Inputs
-								name="subject"
-								className={styles.inputs}
-								placeholder="Subject"
-								fullWidth
-								variant="outlined" />
-						</Grid>
-						<Grid item xs={8} sm={12} className={styles['grid-messege']}>
-							<Inputs
-								name="message"
-								className={styles.message}
-								placeholder="Message"
-								type="text"
-								multiline
-								rows={5}
-								fullWidth
-								variant="outlined" />
-						</Grid>
-						<Box className={styles['content-button-contact']}>
-							<button className={styles['button-contact']} type="submit">
-								<span>Send Message!</span>
-							</button>
-						</Box>
-					</Grid>
-				</form>
+				<Formik
+					initialValues={{
+						name: '',
+						email: '',
+						subject: '',
+						message: ''
+					}}
+					validate={values => {
+						const errors = {};
+
+						if (!values.email) {
+							errors.email = 'Required';
+						} else if (
+							!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+						) {
+							errors.email = 'Invalid email address';
+						}
+
+						if(!values.name) {
+							errors.name = 'Required'
+						}
+						if(!values.message) {
+							errors.message = 'Required'
+						}
+
+						return errors;
+					}}
+					onSubmit={(values, {resetForm}) => {
+							handleOpen();
+							setTimeout(() => {
+								handleClose();
+							}, 2800);
+							
+							emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_PUBLICKEY)
+							resetForm();
+					}}
+				>
+					{( {values, errors, touched, handleChange, handleBlur, handleSubmit} ) => (
+						<form className={styles.form} ref={form} onSubmit={handleSubmit}>
+							<Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
+								<Grid item xs={8} sm={6} className={styles.grid}>
+									<Inputs
+										name="name"
+										onChange={handleChange}
+             				onBlur={handleBlur}
+             				value={values.name}
+										className={styles.inputs}
+										placeholder="Name"
+										fullWidth
+										color="primary"
+										variant="outlined" />
+										<div className={styles.span}>{errors.name && touched.name && errors.name}</div>
+								</Grid>
+								<Grid item xs={8} sm={6}>
+									<Inputs
+										name="email"
+										onChange={handleChange}
+             				onBlur={handleBlur}
+             				value={values.email}
+										className={styles.inputs}
+										placeholder="Email"
+										fullWidth
+										type="email"
+										variant="outlined" />
+										<div className={styles.span}>{errors.email && touched.email && errors.email}</div>
+								</Grid>
+								<Grid item xs={8} sm={12} className={styles['grid-subject']}>
+									<Inputs
+										name="subject"
+										onChange={handleChange}
+             				onBlur={handleBlur}
+             				value={values.subject}
+										className={styles.inputs}
+										placeholder="Subject"
+										fullWidth
+										variant="outlined" />
+								</Grid>
+								<Grid item xs={8} sm={12} className={styles['grid-messege']}>
+									<Inputs
+										name="message"
+										onChange={handleChange}
+             				onBlur={handleBlur}
+             				value={values.message}
+										className={styles.message}
+										placeholder="Message"
+										type="text"
+										multiline
+										rows={5}
+										fullWidth
+										variant="outlined" />
+										<div className={styles.span}>{errors.message && touched.message && errors.message}</div>
+								</Grid>
+								<Box className={styles['content-button-contact']}>
+									<button className={styles['button-contact']} type="submit">
+										<span>Send Message!</span>
+									</button>
+								</Box>
+							</Grid>
+						</form>
+					)}
+				</Formik>
 			</Box>
 			<Cart open={open} />
 		</Box>

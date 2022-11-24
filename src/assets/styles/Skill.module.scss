@@ -65,7 +65,7 @@
   display: block;
   border: 15px solid red;
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s forwards ease-in-out tipsy;
+  animation: 7s alternate ease-in-out tipsy;
 }
 
 .title::before {
@@ -83,7 +83,7 @@
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
   }
 }
 
