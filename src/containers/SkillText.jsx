@@ -25,7 +25,7 @@ const SkillText = () => {
 					<span>database with MySQL and PostgreSQL.</span><br />
 					<br />
 					<span>
-						Visit my <a className={styles.link} rel="Linkedin" href="https://linkedin.com/in/wmonterrozo">
+						Visit my <a className={styles.link} rel="Linkedin" href="https://linkedin.com/in/wmonterrozo" target="_blank">
 								LinkedIn
 							</a> profile for more details or just <Link className={styles.link} rel="contact" href="/contact">
 								contact

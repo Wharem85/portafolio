@@ -4,7 +4,7 @@ import {Box, Card, CardContent, Typography} from '@mui/material';
 const Experience = () => {
 	return (
 		<Box sx={{display: 'flex'}} mb={8}>
-			<Card sx={{ minWidth:275, backgroundColor: '#181818'}} variant="outlined">
+			<Card sx={{ minWidth:275, backgroundColor: '#181818', marginRight: 2}}  variant="outlined">
 				<CardContent>
 					<Typography sx={{ fontSize: 14}} color="text.secondary" gutterBottom>
 						Freelance

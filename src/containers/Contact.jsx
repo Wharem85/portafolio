@@ -1,4 +1,5 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
+import Cart from './Cart';
 import { styled } from '@mui/material/styles';
 import {Box, Typography, TextField, Grid} from '@mui/material';
 import emailjs from '@emailjs/browser';
@@ -25,12 +26,20 @@ const Inputs = styled(TextField)({
 })
 
 const Contact = () => {
+	const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
 	const form = useRef();
 
 	const sendEmail = (e) => {
+		handleOpen();
+		setTimeout(() => {
+			handleClose();
+		}, 20000);
 		e.preventDefault();
 
-		emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_PUBLICKEY)
+		// emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_PUBLICKEY)
 	}
 
 	return (
@@ -93,6 +102,7 @@ const Contact = () => {
 					</Grid>
 				</form>
 			</Box>
+			<Cart open={open} />
 		</Box>
 	);
 };

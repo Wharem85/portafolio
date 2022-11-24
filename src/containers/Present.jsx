@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import { Helmet } from 'react-helmet';
 import styles from '@styles/Present.module.scss';
 
 const Present = () => {
@@ -16,7 +15,7 @@ const Present = () => {
 				<span>Front End Developer / React Developer</span>
 			</Typography>
 			<Box className={styles['content-button']} mt={14}>
-				<button className={styles.button}><span>Contact me!</span></button>
+				<button className={styles.button}><a href="/contact">Contact me!</a></button>
 			</Box>
 		</Box>
 	);

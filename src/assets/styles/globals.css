@@ -7,6 +7,18 @@ body {
   background-color: #1d1d1d;
 }
 
+body::-webkit-scrollbar {
+ display: none;
+}
+
+body:hover::-webkit-scrollbar {
+ display: initial;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #08fdd8;
+}
+
 a {
   color: inherit;
   text-decoration: none;

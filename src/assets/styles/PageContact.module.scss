@@ -1,0 +1,46 @@
+@import "vars";
+
+.Contact-content {
+	margin-left: 150px;
+}
+
+.Contact-content::before {
+	content: '<html>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	left: 170px;
+	top: 0;
+}
+
+.Contact-content::after {
+	content: '</html>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 92%;
+	left: 170px;
+}
+
+.contact-container::before {
+	content: '<body>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	left: 190px;
+	top: 40px;
+}
+
+.contact-container::after {
+	content: '</body>';
+	font-family: $--font-etiqueta;
+	color: $--text-etiqueta;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 87%;
+	left: 190px;
+}
+
