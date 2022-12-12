@@ -8,7 +8,7 @@ import styles from '@styles/PortfolioImage.module.scss';
 const PortfolioImage = () => {
 	return (
 		<Box className={styles.PortfolioImage}>
-			<ImageList className={styles.list} sx={{ width: '100%', height: 550 }} cols={4}>
+			<ImageList className={styles.list} sx={{ width: '100%', height: 875 }} cols={4}>
 				{proyectsData.map((data) => (
 					<ImageListItem className={styles.item} key={data.id}>
 						<Image

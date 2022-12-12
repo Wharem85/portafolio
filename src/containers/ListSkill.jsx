@@ -39,7 +39,7 @@ const ListSkill = () => {
 						<ListItemText className={styles.text}>TailwindCss</ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}>MaterialUi</ListItemText>
+						<ListItemText className={styles.text}>Material Ui</ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
 						<ListItemText className={styles.text}>Webpack</ListItemText>

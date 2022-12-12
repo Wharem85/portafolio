@@ -34,14 +34,16 @@
 .letter {
 	color: $--text-hover;
 	font-weight: bold;
+	filter: brightness(1.75);
 }
 
 .letter2 {
-	color: #fd2155;
+	color: $--letter;
 	position: absolute;
 	top: 262px;
 	left: 397px;
 	font-weight: bold;
+	filter: brightness(1.75);
 }
 
 .h1-grey {

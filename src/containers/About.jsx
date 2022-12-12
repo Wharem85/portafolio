@@ -14,10 +14,16 @@ const About = () => {
 				</Typography>
 				<br />
 				<Typography className={styles.text} variant="h5" gutterBottom>
-					<span>Well organized person, problem solver. A fan of video games, animated</span><br />
-					<span>series and family person.</span><br />
-					<span>Interested in the whole spectrum of frontend and backend to work on </span><br />
+					<span>Well organized person, problem solver. A fan of video games,</span><br />
+					<span>animated series and family person. Interested in the whole</span><br />
+					<span>spectrum of frontend and backend to work on </span><br />
 					<span>ambitious projects with positive and respectful people.</span><br />
+					<br />
+					<span>A guy who is passionate about software development,</span><br />
+					<span>who loves challenges and doesn't give up easily. A self-taught,</span><br/>
+					<span>proactive, honest and responsible person, who every day</span><br/>
+					<span>strives to learn something new in order to improve himself and</span><br/>
+					<span>reach new challenges.</span>
 				</Typography>
 			</Box>
 			<AnimatedTag />
