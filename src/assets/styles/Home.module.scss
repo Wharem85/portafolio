@@ -50,6 +50,10 @@
 	margin-left: 150px;
 }
 
+.Myself {
+	margin-left: 95px;
+}
+
 @media (max-width: 920px) {
 	.Home {
 		color: $--text-hover;
@@ -80,6 +84,10 @@
 
 	.Presentation {
 		margin-left: 30px;
+	}
+
+	.Myself {
+		margin-left: 0;
 	}
 }
 

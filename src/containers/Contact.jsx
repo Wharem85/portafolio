@@ -40,8 +40,8 @@ const Contact = () => {
 					<span>Contact Me</span>
 				</Typography>
 				<Typography className={styles.text} variant="h5" gutterBottom>
-					<span>I’m interested in freelance opportunities, especially ambitious</span><br/>
-					<span>or large projects. However, if you have other request or</span><br/>
+					<span>I’m interested in freelance opportunities, especially ambitious</span><br className={styles.textSpan} />
+					<span>or large projects. However, if you have other request or</span><br className={styles.textSpan} />
 					<span>question, don’t hesitate to use the form.</span>
 				</Typography>
 			</Box>
@@ -78,7 +78,7 @@ const Contact = () => {
 							setTimeout(() => {
 								handleClose();
 							}, 2800);
-							
+
 							emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, form.current, process.env.NEXT_PUBLIC_PUBLICKEY)
 							resetForm();
 					}}
@@ -86,7 +86,7 @@ const Contact = () => {
 					{( {values, errors, touched, handleChange, handleBlur, handleSubmit} ) => (
 						<form className={styles.form} ref={form} onSubmit={handleSubmit}>
 							<Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
-								<Grid item xs={8} sm={6} className={styles.grid}>
+								<Grid item xs={8} sm={7} className={styles.grid}>
 									<Inputs
 										name="name"
 										onChange={handleChange}
@@ -99,7 +99,7 @@ const Contact = () => {
 										variant="outlined" />
 										<div className={styles.span}>{errors.name && touched.name && errors.name}</div>
 								</Grid>
-								<Grid item xs={8} sm={6}>
+								<Grid item xs={8} sm={7}>
 									<Inputs
 										name="email"
 										onChange={handleChange}
@@ -112,7 +112,7 @@ const Contact = () => {
 										variant="outlined" />
 										<div className={styles.span}>{errors.email && touched.email && errors.email}</div>
 								</Grid>
-								<Grid item xs={8} sm={12} className={styles['grid-subject']}>
+								<Grid item xs={8} sm={7} className={styles['grid-subject']}>
 									<Inputs
 										name="subject"
 										onChange={handleChange}
@@ -123,7 +123,7 @@ const Contact = () => {
 										fullWidth
 										variant="outlined" />
 								</Grid>
-								<Grid item xs={8} sm={12} className={styles['grid-messege']}>
+								<Grid item xs={8} sm={7} className={styles['grid-messege']}>
 									<Inputs
 										name="message"
 										onChange={handleChange}

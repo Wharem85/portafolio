@@ -9,8 +9,8 @@ const PortfolioText = () => {
 				<span>My Portfolio</span>
 			</Typography>
 			<Typography className={styles.portSubtitle} variant="h5" gutterBottom>
-				<span>A small gallery of recent projects chosen by me. All these</span><br />
-				<span>projects have been done mostly with JavasCript, with freamworks</span><br />
+				<span>A small gallery of recent projects chosen by me. All these </span><br className={styles.space} />
+				<span>projects have been done mostly with JavasCript, with freamworks </span><br className={styles.space} />
 				<span>like ReactJs, VueJs, MaterialUI, NodeJs, Sequelize, Webpack...</span>
 			</Typography>
 		</Box>

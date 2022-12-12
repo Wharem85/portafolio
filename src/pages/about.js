@@ -13,9 +13,9 @@ const about = () => {
 
 	return (
 		<ThemeProvider theme={darkTheme}>
+			<Sidebar />
 			<Box className={styles.Aboutme}>
 				<Box className={styles.aboutme}>
-					<Sidebar />
 					<About />
 				</Box>
 			</Box>

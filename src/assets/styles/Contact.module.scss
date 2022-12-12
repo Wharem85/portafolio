@@ -138,3 +138,32 @@
 	padding-top: 10px;
   color: rgb(192, 5, 5);
 }
+
+@media (max-width: 920px) {
+	.Contact {
+		margin: 250px 0 150px 40px;
+		display: flex;
+	}
+
+	.contact {
+		width: 350px;
+	}
+
+	.textSpan {
+		display: none;
+	}
+
+	.button-contact {
+		background-position: 0;
+		background-color: $--text-hover;
+		color: $--background-grey;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 420px) {
+	.contact {
+		width: 250px;
+		margin-top: 50px;
+	}
+}

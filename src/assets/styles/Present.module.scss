@@ -103,3 +103,46 @@
 	background-color: $--text-hover;
 	color: $--background-grey;
 }
+
+@media (max-width: 920px) {
+	.space {
+		display: none;
+	}
+
+	.h1 {
+		width: 800px;
+	}
+
+	.letter2 {
+		color: $--letter;
+		position: absolute;
+		top: 270px;
+		left: 435px;
+		font-weight: bold;
+		filter: brightness(1.75);
+	}
+
+	.button {
+		background-position: 0;
+		background-color: $--text-hover;
+		color: $--background-grey;
+	}
+
+	.contact {
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 420px) {
+	.h1 {
+		width: 500px;
+	}
+	.letter2 {
+		color: $--letter;
+		position: absolute;
+		top: 382px;
+		left: 110px;
+		font-weight: bold;
+		filter: brightness(1.75);
+	}
+}

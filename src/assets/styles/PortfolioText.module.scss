@@ -55,3 +55,31 @@
 	position: absolute;
 	margin-left: 2rem;
 }
+
+@media (max-width: 920px) {
+	.space {
+		display: none;
+	}
+
+	.portSubtitle {
+		font-size: 28px;
+		font-weight: bold;
+		margin-top: 140px;
+		margin-bottom: 120px;
+		width: 780px;
+	}
+}
+
+@media (max-width: 420px) {
+	.portSubtitle {
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 100px;
+		margin-bottom: 120px;
+		width: 600px;
+	}
+
+	.space {
+		display: none;
+	}
+}
