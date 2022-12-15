@@ -2,11 +2,11 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import SkillText from '@containers/SkillText';
 import ListSkill from '@containers/ListSkill';
-import Experience from '@containers/Experience';
+import styles from '@styles/Skill.module.scss'
 
 const Skills = () => {
 	return (
-		<Box ml={26} sx={{display: 'flex'}}>
+		<Box className={styles.skillContent} >
 			<SkillText />
 			<ListSkill />
 		</Box>

@@ -331,3 +331,13 @@ $swayspeed: 20s;
         transform: translateX(-2px);
     }
 }
+
+@media (max-width: 920px) {
+    .container {
+        display: none;
+    }
+
+    .error404page {
+        display: none;
+    }
+}

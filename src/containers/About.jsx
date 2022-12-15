@@ -26,7 +26,9 @@ const About = () => {
 					<span>reach new challenges.</span>
 				</Typography>
 			</Box>
-			<AnimatedTag />
+			<Box className={styles.tag}>
+				<AnimatedTag />
+			</Box>
 		</Box>
 	);
 };

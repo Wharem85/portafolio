@@ -1,10 +1,11 @@
 import React from 'react';
 import {Box, Card, CardContent, Typography} from '@mui/material';
+import styles from '@styles/Experience.module.scss';
 
 const Experience = () => {
 	return (
-		<Box sx={{display: 'flex'}} mb={8}>
-			<Card sx={{ minWidth:275, backgroundColor: '#181818', marginRight: 2}}  variant="outlined">
+		<Box className={styles.Experience}>
+			<Card className={styles.contentCard} sx={{ minWidth:275, backgroundColor: '#181818'}}  variant="outlined">
 				<CardContent>
 					<Typography sx={{ fontSize: 14}} color="text.secondary" gutterBottom>
 						Freelance
@@ -16,7 +17,7 @@ const Experience = () => {
 						Developer
 					</Typography>
 					<Typography>
-						- Odoo module development and modification
+						- Odoo module development and modification Python
 					</Typography>
 				</CardContent>
 			</Card>
@@ -32,7 +33,7 @@ const Experience = () => {
 						Full Stack Developer
 					</Typography>
 					<Typography>
-						Creation of a complete platform and database<br/>
+						Creation of a complete platform and database <br className={styles.space}/>
 						for a school with an estimated 350 students.<br/>
 					</Typography>
 				</CardContent>

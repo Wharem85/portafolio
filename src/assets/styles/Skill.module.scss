@@ -40,6 +40,11 @@
 	left: 190px;
 }
 
+.skillContent {
+	margin-left: 170px;
+	display: flex;
+}
+
 .title {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
@@ -120,4 +125,119 @@
 
 .link {
 	color: $--text-hover;
+}
+
+@media (max-width: 920px) {
+	.Skill::before {
+		left: 20px;
+		top: 120px;
+	}
+
+	.Skill::after {
+		top: 1530px;
+		left: 20px;
+	}
+
+	.skill::before {
+		left: 40px;
+		top: 160px;
+	}
+
+	.skill::after {
+		top: 1490px;
+		left: 40px;
+	}
+
+	.skillContent {
+		margin-left: 70px;
+		display: block;
+	}
+
+	.title {
+		top: 22%;
+		left: 50%;
+	}
+
+	.content-text::after {
+		font-size: 1.8rem;
+		left: 70px;
+		top: 680px;
+		z-index: 10;
+	}
+
+	.content-text {
+		margin-top: 350px;
+		z-index: 999;
+	}
+}
+
+@media (max-width: 420px) {
+	.Skill::before {
+		font-size: 1.2rem;
+		left: 20px;
+		top: 100px;
+	}
+
+	.Skill::after {
+		font-size: 1.2rem;
+		top: 1850px;
+		left: 20px;
+	}
+
+	.skill::before {
+		font-size: 1.2rem;
+		left: 40px;
+		top: 130px;
+	}
+
+	.skill::after {
+		font-size: 1.2rem;
+		top: 1820px;
+		left: 40px;
+	}
+
+	.skillContent {
+		margin-left: 30px;
+		display: block;
+	}
+
+	.title {
+		top: 36%;
+		left: 50%;
+		font-size: 20px;
+		letter-spacing: -1px;
+	}
+
+	.title::before,
+	.title::after {
+		border: 10px solid red;
+	}
+
+	.content-text::before {
+		font-size: 1.2rem;
+		position: absolute;
+		margin-top: -3rem;
+		z-index: -10;
+	}
+
+	.content-text::after {
+		font-size: 1.2rem;
+		left: 30px;
+		top: 860px;
+		z-index: 3;
+	}
+
+	.SkillText {
+		width: 100%;
+	}
+
+	.content-text {
+		width: 100%;
+		margin-top: 350px;
+		z-index: 999;
+	}
+
+	.space {
+		display: none;
+	}
 }

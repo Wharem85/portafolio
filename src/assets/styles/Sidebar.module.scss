@@ -10,7 +10,7 @@
 	right: auto;
 	bottom: 0;
 	display: flex;
-	z-index: 3;
+	z-index: 8;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
@@ -159,7 +159,7 @@
 	.Menu {
 		width: 100%;
 		background-color: $--black;
-		height: 6%;
+		height: 8%;
 		display: block;
 		position: fixed;
 		z-index: 3;
@@ -197,26 +197,33 @@
 		display: flex;
 		position: fixed;
 		top: 0;
-		margin-left: 200px;
+		margin-left: 150px;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		border-top: 0;
 	}
 
 	.main-menu_nav .pages {
 		text-align: center;
 		width: 100%;
 		display: block;
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		color: -text-color;
 		line-height: 5rem;
 		filter: brightness(1.75);
 		transition: color 0.3s, background-color 0.3s;
+		border-bottom: 0;
+	}
+
+	.page-contact {
+		font-size: 1.3rem;
+		border-bottom: 0;
 	}
 
 	.social {
 		color: $--text-color;
-		margin-top: 2.5%;
+		margin-top: 30px;
 		margin-right: 10px;
 		padding: 0;
 		list-style: none;
@@ -239,20 +246,20 @@
 	.Menu {
 		width: 100%;
 		background-color: $--black;
-		height: 4%;
+		height: 80px;
 		display: block;
 		position: fixed;
 		z-index: 3;
 	}
 
 	.main-menu_top {
-		margin-top: 45px;
+		margin-top: 35px;
 	}
 
 	.logo {
 		display: flex;
 		position: fixed;
-		left: 0;
+		left: -10px;
 	}
 
 	.logo-letter {
@@ -265,7 +272,7 @@
 		font-family: font-file-82132;
 		color: $--white;
 		margin-top: 1px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.main-menu_top>span {
@@ -276,73 +283,33 @@
 		width: 60%;
 		display: flex;
 		position: fixed;
-		top: 0;
-		margin-left: 200px;
+		top: 15px;
+		margin-left: 100px;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		border-top: 0;
 	}
 
 	.main-menu_nav .pages {
 		text-align: center;
 		width: 100%;
 		display: block;
-		font-size: 1.1rem;
+		font-size: 14px;
 		color: $--text-color;
-		line-height: 5rem;
-		filter: brightness(1.75);
-		transition: color 0.3s, background-color 0.3s;
+		line-height: 2rem;
+		border-bottom: 0;
 	}
 
 	.page-contact {
 		color: $--text-hover;
 		text-align: center;
+		font-size: 14px;
+		line-height: 2rem;
+		border-bottom: 0;
 	}
 
 	.social {
-		color: $--text-color;
-		margin-top: 30px;
-		margin-right: 10px;
-		padding: 0;
-		list-style: none;
-		display: flex;
-		position: fixed;
-		top: 0;
-		right: 0;
-		flex-wrap: wrap;
-		height: 20rem;
-	}
-
-	.li {
-		display: list-item;
-		list-style: none;
-		padding-right: 8px;
-	}
-
-	.social svg {
-		width: 1.5rem;
-	}
-
-	.social svg:hover {
-		-webkit-text-size-adjust: 100%;
-		font-size: 1.6rem;
-		line-height: 1.5;
-		font-family: "Open Sans",sans-serif;
-		-webkit-box-direction: normal;
-		list-style: none;
-		text-align: center;
-		color: #08fdd8;
-		box-sizing: border-box;
-		will-change: transform;
-		overflow: hidden;
-		width: 1.5rem;
-	}
-
-	.social-icon {
-		width: 1.5rem;
-	}
-
-	.social-icon:hover {
-		color: $--text-hover;
+		display: none;
 	}
 }
