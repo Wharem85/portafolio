@@ -134,15 +134,27 @@
 }
 
 @media (max-width: 420px) {
-	.h1 {
-		width: 500px;
+	.Present {
+		margin-top: 150px;
+		margin-left: 40px;
 	}
+
+	.h1 {
+		width: 300px;
+		font-size: 40px;
+	}
+
 	.letter2 {
 		color: $--letter;
 		position: absolute;
-		top: 382px;
-		left: 110px;
+		top: 317px;
+		left: 44px;
 		font-weight: bold;
 		filter: brightness(1.75);
+	}
+
+	.h1::after {
+		margin-top: 1rem;
+		margin-left: 2rem;
 	}
 }

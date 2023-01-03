@@ -2,5 +2,34 @@
 
 .Work {
 	margin-left: 150px;
-	margin-top: 40px;
+}
+
+.image-list {
+	height: 920px;
+}
+
+.image-list::-webkit-scrollbar {
+ display: none;
+}
+
+.image-list:hover::-webkit-scrollbar {
+ display: initial;
+}
+
+.image-list::-webkit-scrollbar-thumb {
+	background-color: $--text-hover;
+}
+
+@media (max-width: 920px) {
+	.Work {
+		margin: 0;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 420px) {
+	.Work {
+		margin: 0;
+		margin-top: 80px;
+	}
 }

@@ -45,7 +45,7 @@ const Contact = () => {
 					<span>question, don’t hesitate to use the form.</span>
 				</Typography>
 			</Box>
-			<Box className={styles['form-container']} ml={{xs: 4, sm: 8, md: 12}}>
+			<Box className={styles['form-container']}>
 				<Formik
 					initialValues={{
 						name: '',

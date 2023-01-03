@@ -1,6 +1,5 @@
 import React from 'react';
 import data from '@utils/proyectsData';
-import Image from 'next/image';
 import {Box, ImageList, ImageListItem, ImageListItemBar, IconButton} from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import styles from '@styles/Work.module.scss';
@@ -8,16 +7,13 @@ import styles from '@styles/Work.module.scss';
 const Work = () => {
 	return (
 		<Box className={styles.Work}>
-			<ImageList className={styles['image-list']} sx={{ width: '100%', height: '100%' }} cols={4}>
+			<ImageList className={styles['image-list']}  >
 				{data.map((data) => (
 					<ImageListItem className={styles['item-list']} key={data.id}>
-						<Image
+						<img
 							src={data.img}
-							width={450} height={200}
-							layout="intrinsic"
-							srcSet={data.img}
+							className={styles.img}
 							alt={data.title}
-							loading="lazy"
 						/>
 						<ImageListItemBar
 							title={data.title}

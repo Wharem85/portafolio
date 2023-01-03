@@ -87,8 +87,32 @@
 	}
 
 	.Myself {
-		margin-left: 0;
+		margin-left: 300px;
 	}
 }
 
-// @media (max-width: 420px)
+@media (max-width: 420px) {
+	.Home::before {
+		margin-left: 10px;
+	}
+
+	.Home::after {
+		margin-left: 10px;
+	}
+
+	.home::before {
+		margin-left: 30px;
+	}
+
+	.home::after {
+		margin-left: 30px;
+	}
+
+	.Presentation {
+		margin-left: 0;
+	}
+
+	.Myself {
+		margin-left: 150px;
+	}
+}

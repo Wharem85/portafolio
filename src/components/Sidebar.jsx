@@ -29,7 +29,7 @@ const Sidebar = () => {
 					<Link className={styles.pages} rel="about" href="/about">About</Link>
 				</ListItem>
 				<ListItem disablePadding>
-					<Link className={styles.pages} rel="skills" href="/skills">My Skills</Link>
+					<Link className={styles.pages} rel="skills" href="/skills">Skills</Link>
 				</ListItem>
 				<ListItem disablePadding>
 					<Link className={styles.pages} rel="work" href="/work">Work</Link>

@@ -44,3 +44,40 @@
 	left: 190px;
 }
 
+@media (max-width: 920px) {
+	.Contact-content {
+		margin-left: 250px;
+	}
+
+	.Contact-content::before {
+		left: 30px;
+		top: 100px;
+	}
+
+	.Contact-content::after {
+		top: 1350px;
+		left: 30px;
+	}
+
+	.contact-container::before {
+		left: 50px;
+		top: 140px;
+	}
+
+	.contact-container::after {
+		top: 1300px;
+		left: 50px;
+	}
+}
+
+@media (max-width: 420px) {
+	.Contact-content::after {
+		top: 1400px;
+		left: 30px;
+	}
+
+	.contact-container::after {
+		top: 1350px;
+		left: 50px;
+	}
+}

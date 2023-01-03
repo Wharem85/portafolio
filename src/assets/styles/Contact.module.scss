@@ -1,7 +1,7 @@
 @import "vars";
 
 .Contact {
-	margin: 250px 0 150px 70px;
+	margin: 250px 0 150px 90px;
 	display: flex;
 }
 
@@ -60,6 +60,7 @@
 
 .form-container {
 	margin-top: 10px;
+	margin-left: 250px;
 }
 
 .form-container::before {
@@ -141,8 +142,8 @@
 
 @media (max-width: 920px) {
 	.Contact {
-		margin: 250px 0 150px 40px;
-		display: flex;
+		margin: 250px 0 0 -200px;
+		display: block;
 	}
 
 	.contact {
@@ -151,6 +152,22 @@
 
 	.textSpan {
 		display: none;
+	}
+
+	.text {
+		margin-top: 70px;
+		margin-bottom: 0;
+		width: 650px;
+	}
+
+	.form-container {
+		margin-top: 100px;
+		margin-left: 30px;
+		height: 850px;
+	}
+
+	.form-container::after {
+		margin-top: 10px;
 	}
 
 	.button-contact {
@@ -162,8 +179,43 @@
 }
 
 @media (max-width: 420px) {
+	.Contact {
+		margin: 250px 0 0 -100px;
+		display: block;
+	}
+
 	.contact {
-		width: 250px;
-		margin-top: 50px;
+		width: 350px;
+	}
+
+	.textSpan {
+		display: none;
+	}
+
+	.text {
+		margin-top: 70px;
+		margin-bottom: 0;
+		width: 300px;
+	}
+
+	.form {
+		width: 300px;
+	}
+
+	.form-container {
+		margin-top: 100px;
+		margin-left: 30px;
+		height: 850px;
+	}
+
+	.form-container::after {
+		margin-top: 10px;
+	}
+
+	.button-contact {
+		background-position: 0;
+		background-color: $--text-hover;
+		color: $--background-grey;
+		font-weight: bold;
 	}
 }
