@@ -10,42 +10,42 @@ const ListSkill = () => {
 			<List className={styles['list-content']} sx={{ width: '100%', maxWidth: 360, display: 'flex' }}>
 				<Box className={styles.content}>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>ReactJs</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>ReactJs</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Javascript</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Javascript</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>React Native</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>React Native</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>NodeJs</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>NodeJs</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Docker</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Docker</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Frontend</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Frontend</span></ListItemText>
 					</ListItem>
 				</Box>
 				<Box>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Backend</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Backend</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>NextJs</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>NextJs</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>TailwindCss</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>TailwindCss</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Material Ui</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Material Ui</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>Webpack</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>Webpack</span></ListItemText>
 					</ListItem>
 					<ListItem component="li" className={styles.item}>
-						<ListItemText className={styles.text}><span>REST API's</span></ListItemText>
+						<ListItemText className={styles.text}><span className={styles.span}>REST API's</span></ListItemText>
 					</ListItem>
 				</Box>
 			</List>

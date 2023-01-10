@@ -21,7 +21,6 @@
 	height: 2.63em;
 	background-color: $--text-list;
 	margin-bottom: 1em;
-	padding-left: 3em;
 	line-height: 2.6em;
 	white-space: nowrap;
 	border-radius: 1.3em 0 0 1.3em;
@@ -30,6 +29,10 @@
 	animation: moveout;
 	animation-duration: 1.5s;
 	animation-delay: 0.5s;
+}
+
+.span {
+	padding-left: 50px;
 }
 
 .item::before {
