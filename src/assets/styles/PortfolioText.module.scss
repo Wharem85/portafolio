@@ -6,8 +6,11 @@
 }
 
 .potTitle {
-	font-family: $--font-family;
 	color: $--text-hover;
+}
+
+.title {
+	font-family: $--font-family;
 }
 
 .potTitle::before {
@@ -33,9 +36,10 @@
 	color: $--white;
 	font-family: "Open Sans",sans-serif;
 	font-size: $--lg;
+}
+
+.subtitle {
 	font-weight: bold;
-	margin-top: 70px;
-	margin-bottom: 120px;
 }
 
 .portSubtitle::before {

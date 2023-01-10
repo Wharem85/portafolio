@@ -30,12 +30,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
 	margin-bottom: 150px;
+	padding-top: 2rem;
 }
 
 .logo {
-	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -116,6 +115,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	height: 20rem;
+	margin-top: 70px;
 }
 
 .li {

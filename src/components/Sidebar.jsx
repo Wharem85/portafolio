@@ -16,7 +16,7 @@ import styles from '@styles/Sidebar.module.scss';
 
 const Sidebar = () => {
 	return (
-		<Box className={styles.Menu} flex={1} p={2}>
+		<Box className={styles.Menu} flex={1}>
 			<Box className={styles['main-menu_top']}>
 				<Link className={styles.logo} href="/" rel="home">
 					<Image className={styles['logo-letter']} src={logo} alt="logo" width="50%" height="50%" layout="intrinsic" />

@@ -37,12 +37,12 @@ const Contact = () => {
 		<Box className={styles.Contact}>
 			<Box>
 				<Typography className={styles.contact} variant="h2" gutterBottom>
-					<span>Contact Me</span>
+					<span className={styles.title}>Contact Me</span>
 				</Typography>
-				<Typography className={styles.text} variant="h5" gutterBottom>
-					<span>I’m interested in freelance opportunities, especially ambitious</span><br className={styles.textSpan} />
-					<span>or large projects. However, if you have other request or</span><br className={styles.textSpan} />
-					<span>question, don’t hesitate to use the form.</span>
+				<Typography className={styles.text} variant="h5" mt={12} >
+					<span className={styles.subtitles}>I’m interested in freelance opportunities, especially ambitious</span><br className={styles.textSpan} />
+					<span className={styles.subtitles}>or large projects. However, if you have other request or</span><br className={styles.textSpan} />
+					<span className={styles.subtitles}>question, don’t hesitate to use the form.</span>
 				</Typography>
 			</Box>
 			<Box className={styles['form-container']}>
