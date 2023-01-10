@@ -8,6 +8,7 @@
 	position: absolute;
 	left: 170px;
 	top: 0;
+	font-weight: 600;
 }
 
 .Skill::after {
@@ -16,8 +17,9 @@
 	color: $--text-etiqueta;
 	font-size: 1.8rem;
 	position: absolute;
-	top: 92%;
+	top: 885px;
 	left: 170px;
+	font-weight: 600;
 }
 
 .skill::before {
@@ -28,6 +30,7 @@
 	position: absolute;
 	left: 190px;
 	top: 40px;
+	font-weight: 600;
 }
 
 .skill::after {
@@ -36,8 +39,9 @@
 	color: $--text-etiqueta;
 	font-size: 1.8rem;
 	position: absolute;
-	top: 87%;
+	top: 835px;
 	left: 190px;
+	font-weight: 600;
 }
 
 .skillContent {
@@ -48,15 +52,19 @@
 .title {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 40px;
-  font-weight: bold;
   text-decoration: none;
-  letter-spacing: -3px;
   margin: 0;
   position: absolute;
   top: 25%;
   left: 24%;
   transform: translateX(-50%) translateY(-50%);
+	font-size: 40px;
+}
+
+.spanTitle {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -3px;
 }
 
 .title::before,
@@ -117,10 +125,13 @@
 }
 
 .textSkill {
-	font-family: $--font-family;
 	color: $--white;
-	font-size: 20px;
 	transform: translateX(1%) translateY(0%);
+}
+
+.span {
+	font-family: $--font-family;
+	font-size: 20px;
 }
 
 .link {
