@@ -7,7 +7,6 @@
 
 .h1 {
 	color: $--white;
-	letter-spacing: 4px;
 }
 
 .h1::before {
@@ -41,7 +40,7 @@
 	color: $--letter;
 	position: absolute;
 	top: 262px;
-	left: 397px;
+	left: 374px;
 	font-weight: bold;
 	filter: brightness(1.75);
 }
@@ -50,8 +49,11 @@
 	color: $--text-color;
 	font-family: "Open Sans",sans-serif;
 	font-size: $--lg;
-	font-weight: bold;
 	margin-top: 70px;
+}
+
+.profesion {
+	font-weight: bold;
 }
 
 .h1-grey::before {

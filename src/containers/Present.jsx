@@ -12,7 +12,7 @@ const Present = () => {
 				<span>Web Developer</span>
 			</Typography>
 			<Typography className={styles['h1-grey']}>
-				<span>Front End Developer / React Developer</span>
+				<span className={styles.profesion}>Front End Developer / React Developer</span>
 			</Typography>
 			<Box className={styles['content-button']} mt={14}>
 				<button className={styles.button}><a className={styles.contact} href="/contact">Contact me!</a></button>
