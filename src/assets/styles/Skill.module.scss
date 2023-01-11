@@ -191,7 +191,7 @@
 
 	.Skill::after {
 		font-size: 1.2rem;
-		top: 1930px;
+		top: 2030px;
 		left: 20px;
 	}
 
@@ -203,7 +203,7 @@
 
 	.skill::after {
 		font-size: 1.2rem;
-		top: 1900px;
+		top: 2000px;
 		left: 40px;
 	}
 
@@ -241,8 +241,12 @@
 	.content-text::after {
 		font-size: 1.2rem;
 		left: 30px;
-		top: 970px;
+		top: 1030px;
 		z-index: 3;
+	}
+
+	.textSkill {
+		width: 320px;
 	}
 
 	.SkillText {

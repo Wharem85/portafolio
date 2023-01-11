@@ -21,7 +21,7 @@ const Experience = () => {
 					</Typography>
 				</CardContent>
 			</Card>
-			<Card sx={{ minWidth:275, backgroundColor: '#181818'}} variant="outlined">
+			<Card sx={{ minWidth:275, backgroundColor: '#181818'}} className={styles.contentCard} variant="outlined">
 				<CardContent>
 					<Typography sx={{ fontSize: 14}} color="text.secondary" gutterBottom>
 						Freelance

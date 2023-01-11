@@ -71,13 +71,27 @@
 }
 
 @media (max-width: 420px) {
+	.Contact-content {
+		margin-left: 120px;
+	}
+
+	.Contact-content::before {
+		left: 10px;
+		top: 80px;
+	}
+
 	.Contact-content::after {
 		top: 1400px;
-		left: 30px;
+		left: 10px;
+	}
+
+	.contact-container::before {
+		left: 20px;
+		top: 120px;
 	}
 
 	.contact-container::after {
 		top: 1350px;
-		left: 50px;
+		left: 20px;
 	}
 }
