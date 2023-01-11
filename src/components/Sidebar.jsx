@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import logo from '@icons/logo.png';
 import instagram from '@icons/instagram.png';
 import Image from 'next/image';
@@ -24,20 +24,22 @@ const Sidebar = () => {
 				</Link>
 				<span className={styles.web}>Web Developer</span>
 			</Box>
-			<List className={styles['main-menu_nav']}>
-				<ListItem disablePadding>
-					<Link className={styles.pages} rel="about" href="/about">About</Link>
-				</ListItem>
-				<ListItem disablePadding>
-					<Link className={styles.pages} rel="skills" href="/skills">Skills</Link>
-				</ListItem>
-				<ListItem disablePadding>
-					<Link className={styles.pages} rel="work" href="/work">Work</Link>
-				</ListItem>
-				<ListItem disablePadding>
-					<Link className={styles.pages, styles['page-contact']} rel="contact" href="/contact">Contact</Link>
-				</ListItem>
-			</List>
+			<Box className={styles.containerNav}>
+				<List className={styles['main-menu_nav']}>
+					<ListItem disablePadding>
+						<Link className={styles.pages} rel="about" href="/about">About</Link>
+					</ListItem>
+					<ListItem disablePadding>
+						<Link className={styles.pages} rel="skills" href="/skills">Skills</Link>
+					</ListItem>
+					<ListItem disablePadding>
+						<Link className={styles.pages} rel="work" href="/work">Work</Link>
+					</ListItem>
+					<ListItem disablePadding>
+						<Link className={styles.pages, styles['page-contact']} rel="contact" href="/contact">Contact</Link>
+					</ListItem>
+				</List>
+			</Box>
 			<ul className={styles.social}>
 				<li className={styles.li}>
 					<a href="https://linkedin.com/in/wmonterrozo" target="_blank">

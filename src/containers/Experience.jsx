@@ -27,7 +27,7 @@ const Experience = () => {
 						Freelance
 					</Typography>
 					<Typography variant="h5" component="div">
-						Bavaria Motors
+						School
 					</Typography>
 					<Typography sx={{mb:1.5}}>
 						Full Stack Developer

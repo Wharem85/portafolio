@@ -155,6 +155,10 @@
 	display: none;
 }
 
+.containerNav {
+	width: 100%;
+}
+
 @media (max-width: 920px) {
 	.Menu {
 		width: 100%;
@@ -166,13 +170,13 @@
 	}
 
 	.main-menu_top {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 
 	.logo {
 		display: flex;
 		position: fixed;
-		left: 0;
+		left: 10px;
 	}
 
 	.logo-letter {
@@ -192,15 +196,16 @@
 		display: none;
 	}
 
+	.containerNav {
+		position:inherit;
+		top: 0;
+		margin-left: 150px;
+	}
+
 	.main-menu_nav {
 		width: 60%;
 		display: flex;
-		position: fixed;
-		top: 0;
-		margin-left: 150px;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		border-top: 0;
 	}
 
@@ -253,13 +258,14 @@
 	}
 
 	.main-menu_top {
-		margin-top: 35px;
+		margin-top: 5px;
+		margin-left: 10px;
 	}
 
 	.logo {
 		display: flex;
 		position: fixed;
-		left: -10px;
+		left: 20px;
 	}
 
 	.logo-letter {
@@ -279,15 +285,17 @@
 		display: none;
 	}
 
+	.containerNav {
+		position:inherit;
+		top: 0;
+		margin-left: 120px;
+		margin-top: 15px;
+	}
+
 	.main-menu_nav {
 		width: 60%;
 		display: flex;
-		position: fixed;
-		top: 15px;
-		margin-left: 100px;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		border-top: 0;
 	}
 

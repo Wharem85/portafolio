@@ -145,7 +145,7 @@
 	}
 
 	.Skill::after {
-		top: 1530px;
+		top: 1600px;
 		left: 20px;
 	}
 
@@ -155,7 +155,7 @@
 	}
 
 	.skill::after {
-		top: 1490px;
+		top: 1560px;
 		left: 40px;
 	}
 
@@ -172,7 +172,7 @@
 	.content-text::after {
 		font-size: 1.8rem;
 		left: 70px;
-		top: 680px;
+		top: 730px;
 		z-index: 10;
 	}
 
@@ -191,7 +191,7 @@
 
 	.Skill::after {
 		font-size: 1.2rem;
-		top: 1850px;
+		top: 1930px;
 		left: 20px;
 	}
 
@@ -203,7 +203,7 @@
 
 	.skill::after {
 		font-size: 1.2rem;
-		top: 1820px;
+		top: 1900px;
 		left: 40px;
 	}
 
@@ -216,12 +216,19 @@
 		top: 36%;
 		left: 50%;
 		font-size: 20px;
-		letter-spacing: -1px;
+		width: 230px;
 	}
 
 	.title::before,
 	.title::after {
+		padding: 34px 18px;
 		border: 10px solid red;
+	}
+
+	.spanTitle {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 1px;
 	}
 
 	.content-text::before {
@@ -234,7 +241,7 @@
 	.content-text::after {
 		font-size: 1.2rem;
 		left: 30px;
-		top: 860px;
+		top: 970px;
 		z-index: 3;
 	}
 
